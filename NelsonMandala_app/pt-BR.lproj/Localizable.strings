@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  NelsonMandala_app
+
+  Created by Ricardo Ferreira on 15/12/17.
+  Copyright © 2017 lucasSantos. All rights reserved.
+*/
+"workingHoursLabel" = "dias de trabalho";
+
+"DateHelperMechanisms" = "minutos";
+"DateHelperMechanism" = "minuto";
+"DateHelperMechanismsHora" = "hora e";
+"DateHelperMechanismsHoras" = "horas e";
+"DateHelperMechanismsHoraApenas" = "hora";
+"DateHelperMechanismsHorasApenas" = "horas";
+
+"labelWarning" = "para completar a mandala, vire o dispositvo para baixo para continuar.";
+
+
+"RegisterLogin" = "Registrar";
+
+
+"MainGalleryVC" = "Tarefas ativas";
+"MainGalleryVC2" = "Tarefas passadas";

@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "x"; ObjectID = "1cH-sD-L6w"; */
+"1cH-sD-L6w.normalTitle" = "x";
+
+/* Class = "UIButton"; normalTitle = "Sair"; ObjectID = "GgH-Jb-7ts"; */
+"GgH-Jb-7ts.normalTitle" = "Sair";
+
+/* Class = "UILabel"; text = "2 hours"; ObjectID = "L2A-aS-nIc"; */
+"L2A-aS-nIc.text" = "2 hours";
+
+/* Class = "UILabel"; text = ">"; ObjectID = "cEp-OC-rcK"; */
+"cEp-OC-rcK.text" = ">";
+
+/* Class = "UILabel"; text = "Task Name"; ObjectID = "eYO-y0-Qek"; */
+"eYO-y0-Qek.text" = "Task Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sx5-4M-C4b"; */
+"sx5-4M-C4b.text" = "Label";
+
+/* Class = "UILabel"; text = "Physics"; ObjectID = "tce-YY-Yzj"; */
+"tce-YY-Yzj.text" = "Physics";
+
+/* Class = "UILabel"; text = "Scheduled"; ObjectID = "wut-dl-3qC"; */
+"wut-dl-3qC.text" = "Scheduled";

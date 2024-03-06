@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "<"; ObjectID = "06b-xE-g03"; */
+"06b-xE-g03.normalTitle" = "<";
+
+/* Class = "UILabel"; text = "Task Title"; ObjectID = "7ky-Fg-FC6"; */
+"7ky-Fg-FC6.text" = "Task Title";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "UaD-tk-ShZ"; */
+"UaD-tk-ShZ.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "00:10"; ObjectID = "UtW-Qc-pjj"; */
+"UtW-Qc-pjj.text" = "00:10";
+
+/* Class = "UILabel"; text = "Lembre:"; ObjectID = "cRv-nx-mmj"; */
+"cRv-nx-mmj.text" = "Instructions:";
+
+/* Class = "UILabel"; text = "Para você completar a mandala, você deve focar nas suas tarefas! sem pausar ou fechar o app, sempre mantendo a tela do seu dispositivo virada para baixo"; ObjectID = "d9j-Qe-Wzs"; */
+"d9j-Qe-Wzs.text" = "If you want to complete the mandala, you must focus on your tasks! without pausing or closing the app, always keeping the screen of your device facing down.";
+
+/* Class = "UIBarButtonItem"; title = "<"; ObjectID = "i3Q-31-frt"; */
+"i3Q-31-frt.title" = "<";
+
+/* Class = "UILabel"; text = "Time to Focus"; ObjectID = "no4-8C-GeI"; */
+"no4-8C-GeI.text" = "Time to Focus";
+
+/* Class = "UIViewController"; title = "Set Timer"; ObjectID = "pxS-r7-K7P"; */
+"pxS-r7-K7P.title" = "Set Timer";

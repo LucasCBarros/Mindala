@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RDO-Zn-hnR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Mandala-->
+        <scene sceneID="OeV-z0-0eE">
+            <objects>
+                <viewController title="Mandala" id="RDO-Zn-hnR" customClass="MandalaMakerViewController" customModule="NelsonMandala_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNj-aT-axj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="geB-6a-XSM">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="frw-yd-o9q">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="frw-yd-o9q" secondAttribute="height" multiplier="1:1" id="oLV-de-D3s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55c-GN-CIb">
+                                <rect key="frame" x="16" y="26" width="30" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="36"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissMandala:" destination="RDO-Zn-hnR" eventType="touchUpInside" id="h9k-dB-NKR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgc-Z8-vqO">
+                                <rect key="frame" x="19" y="572" width="337.5" height="75"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="0.35584332191780821" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="dpU-Jd-BQk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="tarefa concluída!">
+                                    <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishMandala:" destination="RDO-Zn-hnR" eventType="touchUpInside" id="WYk-r7-7Uw"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jao-7k-swA" customClass="MandalaView" customModule="NelsonMandala_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vire o dispositivo com a tela para baixo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gK-Uy-ghU">
+                                <rect key="frame" x="5" y="333" width="365" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL3-vl-khO">
+                                <rect key="frame" x="5" y="609.5" width="365" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="frw-yd-o9q" firstAttribute="centerX" secondItem="fJy-x9-UGT" secondAttribute="centerX" id="4Fc-EO-jTF"/>
+                            <constraint firstItem="vgc-Z8-vqO" firstAttribute="centerX" secondItem="fJy-x9-UGT" secondAttribute="centerX" id="4Yv-nI-y8u"/>
+                            <constraint firstItem="Jao-7k-swA" firstAttribute="bottom" secondItem="frw-yd-o9q" secondAttribute="bottom" id="CGV-wu-Ke4"/>
+                            <constraint firstItem="Jao-7k-swA" firstAttribute="trailing" secondItem="frw-yd-o9q" secondAttribute="trailing" id="FG1-6S-fzA"/>
+                            <constraint firstItem="hL3-vl-khO" firstAttribute="leading" secondItem="fJy-x9-UGT" secondAttribute="leading" constant="5" id="KTs-5U-J7Y"/>
+                            <constraint firstItem="3gK-Uy-ghU" firstAttribute="centerX" secondItem="Jao-7k-swA" secondAttribute="centerX" id="M9X-Ov-D4O"/>
+                            <constraint firstItem="fJy-x9-UGT" firstAttribute="top" secondItem="geB-6a-XSM" secondAttribute="top" id="MA4-ZW-YIg"/>
+                            <constraint firstItem="3gK-Uy-ghU" firstAttribute="centerY" secondItem="Jao-7k-swA" secondAttribute="centerY" id="T69-XV-Nzb"/>
+                            <constraint firstItem="vgc-Z8-vqO" firstAttribute="width" secondItem="BNj-aT-axj" secondAttribute="width" multiplier="0.9" id="Tkd-C3-Dkz"/>
+                            <constraint firstItem="3gK-Uy-ghU" firstAttribute="leading" secondItem="fJy-x9-UGT" secondAttribute="leading" constant="5" id="VES-Tf-F3H"/>
+                            <constraint firstItem="hL3-vl-khO" firstAttribute="centerY" secondItem="vgc-Z8-vqO" secondAttribute="centerY" id="VrB-eb-Jt5"/>
+                            <constraint firstItem="fJy-x9-UGT" firstAttribute="trailing" secondItem="geB-6a-XSM" secondAttribute="trailing" id="fXY-Dq-rDj"/>
+                            <constraint firstItem="frw-yd-o9q" firstAttribute="centerY" secondItem="fJy-x9-UGT" secondAttribute="centerY" id="fYj-Bh-hxM"/>
+                            <constraint firstItem="fJy-x9-UGT" firstAttribute="bottom" secondItem="vgc-Z8-vqO" secondAttribute="bottom" constant="20" id="ivj-Y6-5bU"/>
+                            <constraint firstItem="Jao-7k-swA" firstAttribute="top" secondItem="frw-yd-o9q" secondAttribute="top" id="kCT-8f-fG8"/>
+                            <constraint firstItem="frw-yd-o9q" firstAttribute="trailing" secondItem="geB-6a-XSM" secondAttribute="trailing" id="p9G-HD-rKj"/>
+                            <constraint firstItem="fJy-x9-UGT" firstAttribute="bottom" secondItem="geB-6a-XSM" secondAttribute="bottom" id="qIg-uY-fq9"/>
+                            <constraint firstItem="frw-yd-o9q" firstAttribute="leading" secondItem="geB-6a-XSM" secondAttribute="leading" id="qKa-Ch-Zhg"/>
+                            <constraint firstItem="hL3-vl-khO" firstAttribute="centerX" secondItem="vgc-Z8-vqO" secondAttribute="centerX" id="qgU-Qa-uVd"/>
+                            <constraint firstItem="Jao-7k-swA" firstAttribute="leading" secondItem="frw-yd-o9q" secondAttribute="leading" id="qrD-Od-uGa"/>
+                            <constraint firstItem="fJy-x9-UGT" firstAttribute="leading" secondItem="geB-6a-XSM" secondAttribute="leading" id="yhY-1w-gZO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fJy-x9-UGT"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="vgc-Z8-vqO" id="HgS-VU-F9T"/>
+                        <outlet property="mandalaBlockView" destination="Jao-7k-swA" id="HIB-QL-MGf"/>
+                        <outlet property="mandalaImage" destination="frw-yd-o9q" id="ZKI-6p-8Qy"/>
+                        <outlet property="returnButton" destination="55c-GN-CIb" id="V1o-Bl-86D"/>
+                        <outlet property="timeLabel" destination="hL3-vl-khO" id="9j7-T6-jM3"/>
+                        <outlet property="warningLabel" destination="3gK-Uy-ghU" id="ihg-wS-JVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRr-8f-J5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="28.335832083958024"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle 5" width="375" height="667"/>
+    </resources>
+</document>

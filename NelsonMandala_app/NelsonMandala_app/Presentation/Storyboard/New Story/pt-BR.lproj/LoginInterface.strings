@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "Senha"; ObjectID = "BHx-oi-kR6"; */
+"BHx-oi-kR6.placeholder" = "Senha";
+
+/* Class = "UITextField"; placeholder = "Nome"; ObjectID = "Iqs-gc-E7c"; */
+"Iqs-gc-E7c.placeholder" = "Nome";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "aG7-Sh-lcl"; */
+"aG7-Sh-lcl.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "cMd-TE-Dvh"; */
+"cMd-TE-Dvh.placeholder" = "E-mail";
+
+/* Class = "UIButton"; normalTitle = "Esqueceu sua senha?"; ObjectID = "yyR-fl-0CN"; */
+"yyR-fl-0CN.normalTitle" = "Esqueceu sua senha?";

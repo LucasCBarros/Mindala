@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16096C001FA798660006DA55 /* weekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16096BFF1FA798660006DA55 /* weekCalendarView.swift */; };
+		163F87981F9539C10032DF2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F87971F9539C10032DF2C /* AppDelegate.swift */; };
+		163F879F1F9539C10032DF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163F879E1F9539C10032DF2C /* Assets.xcassets */; };
+		163F87A21F9539C10032DF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163F87A01F9539C10032DF2C /* LaunchScreen.storyboard */; };
+		164C74691FC5F6AD00B4CFAB /* IconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C74681FC5F6AD00B4CFAB /* IconCollectionViewCell.swift */; };
+		164F62CE1F965B1D008CC020 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62CD1F965B1D008CC020 /* Task.swift */; };
+		164F62D01F965BB3008CC020 /* DayOfWeekEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62CF1F965BB3008CC020 /* DayOfWeekEnum.swift */; };
+		164F62D41F966507008CC020 /* TaskTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62D31F966507008CC020 /* TaskTimeInterval.swift */; };
+		164F62D61F967C91008CC020 /* SubTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62D51F967C91008CC020 /* SubTaskStatus.swift */; };
+		164F62D81F967F76008CC020 /* TaskCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62D71F967F76008CC020 /* TaskCreationHelper.swift */; };
+		165EFF581FB9F254002880EF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EFF571FB9F254002880EF /* LoginVC.swift */; };
+		165EFF5A1FB9F8CB002880EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 165EFF591FB9F8CB002880EF /* GoogleService-Info.plist */; };
+		165EFF5C1FBA0309002880EF /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EFF5B1FBA0309002880EF /* SegmentView.swift */; };
+		16653F4A1FA8CFBA00150D53 /* SubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653F491FA8CFBA00150D53 /* SubHeaderView.swift */; };
+		166E0C641FAA323E008CDDEF /* TaskInputNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E0C631FAA323E008CDDEF /* TaskInputNameVC.swift */; };
+		1673F7FA1FCDC91100406D8B /* Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1673F7F91FCDC91100406D8B /* Mandala.swift */; };
+		167895471F9A4AEF00D0AEBB /* SubTaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167895461F9A4AEF00D0AEBB /* SubTaskCard.swift */; };
+		1678954A1F9A4BF200D0AEBB /* TopFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167895491F9A4BF200D0AEBB /* TopFlowLayout.swift */; };
+		1679710E1FCF242900E166EA /* MandalaFromTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679710D1FCF242900E166EA /* MandalaFromTaskVC.swift */; };
+		1679765F1FBB6B4F0098E899 /* ShadowViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679765E1FBB6B4F0098E899 /* ShadowViewExtension.swift */; };
+		1683C0AD1FB35BC9004E00AB /* TaskInputOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1683C0AC1FB35BC9004E00AB /* TaskInputOverviewVC.swift */; };
+		1689FF371FE0CAA800485542 /* ImageTransparentCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1689FF361FE0CAA800485542 /* ImageTransparentCropper.swift */; };
+		168BA81C1F98F0DB006DEC5A /* DaySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168BA81B1F98F0DB006DEC5A /* DaySelectView.swift */; };
+		168BA8201F992DA5006DEC5A /* FirebasePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168BA81F1F992DA5006DEC5A /* FirebasePersistence.swift */; };
+		169154C01FC49B2400595B04 /* IconSelectionMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169154BF1FC49B2400595B04 /* IconSelectionMechanism.swift */; };
+		1695158A1FB4BBAA009FADC9 /* InputInfoExchangeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169515891FB4BBAA009FADC9 /* InputInfoExchangeProtocol.swift */; };
+		16A5DECE1F9FD25C00F8C9A5 /* SubTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5DECD1F9FD25C00F8C9A5 /* SubTaskVC.swift */; };
+		16A5DED01FA1063000F8C9A5 /* TasksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5DECF1FA1063000F8C9A5 /* TasksListVC.swift */; };
+		16A5DED21FA107C000F8C9A5 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5DED11FA107C000F8C9A5 /* TaskTableViewCell.swift */; };
+		16AB950E1F9A779400A7451D /* DatesHelperMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AB950D1F9A779400A7451D /* DatesHelperMechanism.swift */; };
+		16F5CC291FA26D6600A632EB /* NewTaskPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5CC281FA26D6600A632EB /* NewTaskPageVC.swift */; };
+		16F5CC2C1FA27A5000A632EB /* TaskInputDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5CC2B1FA27A5000A632EB /* TaskInputDateVC.swift */; };
+		2229F8BC1FCDCD460063E123 /* MainGalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229F8BB1FCDCD460063E123 /* MainGalleryVC.swift */; };
+		2229F8BE1FCDD9690063E123 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229F8BD1FCDD9690063E123 /* GalleryCell.swift */; };
+		2273ADAD1FE04F0E00686F42 /* MandalaGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2273ADAC1FE04F0E00686F42 /* MandalaGenerator.swift */; };
+		22CB17E11FD09D8A00F3C75A /* GalleryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB17E01FD09D8A00F3C75A /* GalleryHeaderView.swift */; };
+		6662AED01FE42D5A005EFE33 /* String + Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6662AECF1FE42D5A005EFE33 /* String + Localized.swift */; };
+		6662AED31FE42F89005EFE33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6662AED51FE42F89005EFE33 /* Localizable.strings */; };
+		6671C8E01FE2FB7F0074CAC0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8E21FE2FB7F0074CAC0 /* MainInterface.storyboard */; };
+		6671C8E41FE2FB9B0074CAC0 /* InputNewTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8E61FE2FB9B0074CAC0 /* InputNewTask.storyboard */; };
+		6671C8E81FE2FBAB0074CAC0 /* LoginInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8EA1FE2FBAB0074CAC0 /* LoginInterface.storyboard */; };
+		6671C8ED1FE2FBB30074CAC0 /* MandalaMaker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8EF1FE2FBB30074CAC0 /* MandalaMaker.storyboard */; };
+		6671C8F21FE2FBC60074CAC0 /* SectionTimePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8F41FE2FBC60074CAC0 /* SectionTimePicker.storyboard */; };
+		6671C8F71FE2FBD20074CAC0 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8F91FE2FBD20074CAC0 /* Gallery.storyboard */; };
+		6671C8FC1FE2FBDC0074CAC0 /* GalleryMandalasFromATask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C8FE1FE2FBDC0074CAC0 /* GalleryMandalasFromATask.storyboard */; };
+		6671C9011FE2FBF60074CAC0 /* GalleryDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6671C9031FE2FBF60074CAC0 /* GalleryDetails.storyboard */; };
+		6686DA881FCF3DE1003BD84B /* MandalaFromTaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686DA871FCF3DE1003BD84B /* MandalaFromTaskDetail.swift */; };
+		678F3AA424A4458FC03DE384 /* Pods_NelsonMandala_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EE7D03CC0791A225FF1F46 /* Pods_NelsonMandala_app.framework */; };
+		9636085B1FA9FF68000DC303 /* CardTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636085A1FA9FF68000DC303 /* CardTaskCell.swift */; };
+		9636085E1FAA0AB9000DC303 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9636085D1FAA0AB9000DC303 /* MainController.swift */; };
+		963608611FAA0AE5000DC303 /* MainController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963608601FAA0AE5000DC303 /* MainController+TableView.swift */; };
+		963608651FAA1F0F000DC303 /* MainController+WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963608641FAA1F0F000DC303 /* MainController+WeekView.swift */; };
+		9636086A1FAA3415000DC303 /* Colors&Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963608691FAA3415000DC303 /* Colors&Fonts.swift */; };
+		963CFFEF1FBB7FF500C24837 /* errorsOfFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CFFEE1FBB7FF500C24837 /* errorsOfFirebase.swift */; };
+		963CFFF11FBB817500C24837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CFFF01FBB817500C24837 /* User.swift */; };
+		966DD7151FA799E200FF1509 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DD7141FA799E200FF1509 /* MainHeader.swift */; };
+		E631BE001FC876B300970320 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631BDFF1FC876B300970320 /* NotificationController.swift */; };
+		E6BB7F471FBCE55D009F07F8 /* MandalaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB7F441FBCE55D009F07F8 /* MandalaView.swift */; };
+		E6BB7F481FBCE55D009F07F8 /* MandalaMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB7F451FBCE55D009F07F8 /* MandalaMakerViewController.swift */; };
+		E6BB7F491FBCE55D009F07F8 /* SectionTimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB7F461FBCE55D009F07F8 /* SectionTimePickerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16096BFF1FA798660006DA55 /* weekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekCalendarView.swift; sourceTree = "<group>"; };
+		163F87941F9539C10032DF2C /* NelsonMandala_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NelsonMandala_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		163F87971F9539C10032DF2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		163F879E1F9539C10032DF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		163F87A11F9539C10032DF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		163F87A31F9539C10032DF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		164C74681FC5F6AD00B4CFAB /* IconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCollectionViewCell.swift; sourceTree = "<group>"; };
+		164F62CD1F965B1D008CC020 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		164F62CF1F965BB3008CC020 /* DayOfWeekEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekEnum.swift; sourceTree = "<group>"; };
+		164F62D31F966507008CC020 /* TaskTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimeInterval.swift; sourceTree = "<group>"; };
+		164F62D51F967C91008CC020 /* SubTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTaskStatus.swift; sourceTree = "<group>"; };
+		164F62D71F967F76008CC020 /* TaskCreationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationHelper.swift; sourceTree = "<group>"; };
+		165EFF571FB9F254002880EF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		165EFF591FB9F8CB002880EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		165EFF5B1FBA0309002880EF /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		16653F491FA8CFBA00150D53 /* SubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeaderView.swift; sourceTree = "<group>"; };
+		166E0C631FAA323E008CDDEF /* TaskInputNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputNameVC.swift; sourceTree = "<group>"; };
+		1673F7F91FCDC91100406D8B /* Mandala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mandala.swift; sourceTree = "<group>"; };
+		167895461F9A4AEF00D0AEBB /* SubTaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTaskCard.swift; sourceTree = "<group>"; };
+		167895491F9A4BF200D0AEBB /* TopFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFlowLayout.swift; sourceTree = "<group>"; };
+		1679710D1FCF242900E166EA /* MandalaFromTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandalaFromTaskVC.swift; sourceTree = "<group>"; };
+		1679765E1FBB6B4F0098E899 /* ShadowViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewExtension.swift; sourceTree = "<group>"; };
+		1683C0AC1FB35BC9004E00AB /* TaskInputOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputOverviewVC.swift; sourceTree = "<group>"; };
+		1689FF361FE0CAA800485542 /* ImageTransparentCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransparentCropper.swift; sourceTree = "<group>"; };
+		1689FF381FE17CD600485542 /* NelsonMandala_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NelsonMandala_app.entitlements; sourceTree = "<group>"; };
+		168BA81B1F98F0DB006DEC5A /* DaySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelectView.swift; sourceTree = "<group>"; };
+		168BA81F1F992DA5006DEC5A /* FirebasePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePersistence.swift; sourceTree = "<group>"; };
+		169154BF1FC49B2400595B04 /* IconSelectionMechanism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectionMechanism.swift; sourceTree = "<group>"; };
+		169515891FB4BBAA009FADC9 /* InputInfoExchangeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInfoExchangeProtocol.swift; sourceTree = "<group>"; };
+		16A5DECD1F9FD25C00F8C9A5 /* SubTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTaskVC.swift; sourceTree = "<group>"; };
+		16A5DECF1FA1063000F8C9A5 /* TasksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListVC.swift; sourceTree = "<group>"; };
+		16A5DED11FA107C000F8C9A5 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		16AB950D1F9A779400A7451D /* DatesHelperMechanism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesHelperMechanism.swift; sourceTree = "<group>"; };
+		16F5CC281FA26D6600A632EB /* NewTaskPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskPageVC.swift; sourceTree = "<group>"; };
+		16F5CC2B1FA27A5000A632EB /* TaskInputDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputDateVC.swift; sourceTree = "<group>"; };
+		2229F8BB1FCDCD460063E123 /* MainGalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGalleryVC.swift; sourceTree = "<group>"; };
+		2229F8BD1FCDD9690063E123 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		2273ADAC1FE04F0E00686F42 /* MandalaGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandalaGenerator.swift; sourceTree = "<group>"; };
+		22CB17E01FD09D8A00F3C75A /* GalleryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryHeaderView.swift; sourceTree = "<group>"; };
+		36EE7D03CC0791A225FF1F46 /* Pods_NelsonMandala_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NelsonMandala_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		548B492842F59FEFC0FFB0A6 /* Pods-NelsonMandala_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NelsonMandala_app.debug.xcconfig"; path = "Target Support Files/Pods-NelsonMandala_app/Pods-NelsonMandala_app.debug.xcconfig"; sourceTree = "<group>"; };
+		5B07E7E2BB8BB87822613475 /* Pods-NelsonMandala_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NelsonMandala_app.release.xcconfig"; path = "Target Support Files/Pods-NelsonMandala_app/Pods-NelsonMandala_app.release.xcconfig"; sourceTree = "<group>"; };
+		6662AECF1FE42D5A005EFE33 /* String + Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Localized.swift"; sourceTree = "<group>"; };
+		6662AED41FE42F89005EFE33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6662AED61FE42F8D005EFE33 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6671C8DF1FE2FAB20074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		6671C8E71FE2FBA30074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/InputNewTask.storyboard; sourceTree = "<group>"; };
+		6671C8E91FE2FBAB0074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginInterface.storyboard; sourceTree = "<group>"; };
+		6671C8EC1FE2FBAE0074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LoginInterface.strings"; sourceTree = "<group>"; };
+		6671C8EE1FE2FBB30074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MandalaMaker.storyboard; sourceTree = "<group>"; };
+		6671C8F11FE2FBB80074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/MandalaMaker.strings"; sourceTree = "<group>"; };
+		6671C8F31FE2FBC60074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SectionTimePicker.storyboard; sourceTree = "<group>"; };
+		6671C8F61FE2FBCA0074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/SectionTimePicker.strings"; sourceTree = "<group>"; };
+		6671C8F81FE2FBD20074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gallery.storyboard; sourceTree = "<group>"; };
+		6671C8FB1FE2FBD50074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Gallery.strings"; sourceTree = "<group>"; };
+		6671C8FD1FE2FBDC0074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GalleryMandalasFromATask.storyboard; sourceTree = "<group>"; };
+		6671C9001FE2FBF00074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/GalleryMandalasFromATask.strings"; sourceTree = "<group>"; };
+		6671C9021FE2FBF60074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GalleryDetails.storyboard; sourceTree = "<group>"; };
+		6671C9051FE2FBF80074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/GalleryDetails.strings"; sourceTree = "<group>"; };
+		6671C9071FE2FFB00074CAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6671C9091FE2FFBC0074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		6671C90B1FE2FFCC0074CAC0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InputNewTask.strings"; sourceTree = "<group>"; };
+		6671C90D1FE300080074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		6671C90F1FE300100074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InputNewTask.strings; sourceTree = "<group>"; };
+		6671C9111FE300150074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginInterface.strings; sourceTree = "<group>"; };
+		6671C9131FE3001A0074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MandalaMaker.strings; sourceTree = "<group>"; };
+		6671C9151FE3001E0074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SectionTimePicker.strings; sourceTree = "<group>"; };
+		6671C9171FE300220074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Gallery.strings; sourceTree = "<group>"; };
+		6671C9191FE3007A0074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GalleryMandalasFromATask.strings; sourceTree = "<group>"; };
+		6671C91B1FE3007F0074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GalleryDetails.strings; sourceTree = "<group>"; };
+		6671C91D1FE300840074CAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6686DA871FCF3DE1003BD84B /* MandalaFromTaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandalaFromTaskDetail.swift; sourceTree = "<group>"; };
+		9636085A1FA9FF68000DC303 /* CardTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTaskCell.swift; sourceTree = "<group>"; };
+		9636085D1FAA0AB9000DC303 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		963608601FAA0AE5000DC303 /* MainController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+TableView.swift"; sourceTree = "<group>"; };
+		963608641FAA1F0F000DC303 /* MainController+WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+WeekView.swift"; sourceTree = "<group>"; };
+		963608691FAA3415000DC303 /* Colors&Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors&Fonts.swift"; sourceTree = "<group>"; };
+		963CFFEE1FBB7FF500C24837 /* errorsOfFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = errorsOfFirebase.swift; path = ../errorsOfFirebase.swift; sourceTree = "<group>"; };
+		963CFFF01FBB817500C24837 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		966DD7141FA799E200FF1509 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		E631BDFF1FC876B300970320 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E6BB7F441FBCE55D009F07F8 /* MandalaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandalaView.swift; sourceTree = "<group>"; };
+		E6BB7F451FBCE55D009F07F8 /* MandalaMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandalaMakerViewController.swift; sourceTree = "<group>"; };
+		E6BB7F461FBCE55D009F07F8 /* SectionTimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTimePickerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		163F87911F9539C10032DF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678F3AA424A4458FC03DE384 /* Pods_NelsonMandala_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163F878B1F9539C10032DF2C = {
+			isa = PBXGroup;
+			children = (
+				6662AED51FE42F89005EFE33 /* Localizable.strings */,
+				963CFFEE1FBB7FF500C24837 /* errorsOfFirebase.swift */,
+				163F87961F9539C10032DF2C /* NelsonMandala_app */,
+				163F87951F9539C10032DF2C /* Products */,
+				23E03D135ACCC69D638E7FA5 /* Pods */,
+				5E7E5B4F589E2BF4F0A65D86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		163F87951F9539C10032DF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				163F87941F9539C10032DF2C /* NelsonMandala_app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		163F87961F9539C10032DF2C /* NelsonMandala_app */ = {
+			isa = PBXGroup;
+			children = (
+				1689FF381FE17CD600485542 /* NelsonMandala_app.entitlements */,
+				166EDA6D1F9658F600ECF1A5 /* Presentation */,
+				166EDA711F96596300ECF1A5 /* Model */,
+				166EDA761F9659A000ECF1A5 /* Data */,
+				166EDA751F96599600ECF1A5 /* Mechanism */,
+				166EDA741F96598900ECF1A5 /* Business */,
+				163F87971F9539C10032DF2C /* AppDelegate.swift */,
+				165EFF591FB9F8CB002880EF /* GoogleService-Info.plist */,
+				163F879E1F9539C10032DF2C /* Assets.xcassets */,
+				163F87A31F9539C10032DF2C /* Info.plist */,
+			);
+			path = NelsonMandala_app;
+			sourceTree = "<group>";
+		};
+		166EDA6D1F9658F600ECF1A5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				963608671FAA33F6000DC303 /* Colors&Fonts */,
+				167895481F9A4BCD00D0AEBB /* Layout */,
+				166EDA701F96593400ECF1A5 /* View */,
+				166EDA6F1F96592A00ECF1A5 /* ViewController */,
+				166EDA6E1F96591100ECF1A5 /* Storyboard */,
+				6662AECF1FE42D5A005EFE33 /* String + Localized.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		166EDA6E1F96591100ECF1A5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				966DD7111FA796EF00FF1509 /* New Story */,
+				163F87A01F9539C10032DF2C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		166EDA6F1F96592A00ECF1A5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2229F8BA1FCDCD040063E123 /* Gallery Controllers */,
+				9636085C1FAA0A99000DC303 /* New Controllers */,
+				16F5CC2A1FA27A2200A632EB /* NewTaskInputs */,
+				16A5DECD1F9FD25C00F8C9A5 /* SubTaskVC.swift */,
+				16A5DECF1FA1063000F8C9A5 /* TasksListVC.swift */,
+				16F5CC281FA26D6600A632EB /* NewTaskPageVC.swift */,
+				165EFF571FB9F254002880EF /* LoginVC.swift */,
+				E631BDFF1FC876B300970320 /* NotificationController.swift */,
+				E6BB7F441FBCE55D009F07F8 /* MandalaView.swift */,
+				E6BB7F451FBCE55D009F07F8 /* MandalaMakerViewController.swift */,
+				E6BB7F461FBCE55D009F07F8 /* SectionTimePickerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		166EDA701F96593400ECF1A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				966DD7161FA7A13300FF1509 /* NewInterfaces */,
+				168BA81B1F98F0DB006DEC5A /* DaySelectView.swift */,
+				167895461F9A4AEF00D0AEBB /* SubTaskCard.swift */,
+				16A5DED11FA107C000F8C9A5 /* TaskTableViewCell.swift */,
+				16096BFF1FA798660006DA55 /* weekCalendarView.swift */,
+				165EFF5B1FBA0309002880EF /* SegmentView.swift */,
+				1679765E1FBB6B4F0098E899 /* ShadowViewExtension.swift */,
+				164C74681FC5F6AD00B4CFAB /* IconCollectionViewCell.swift */,
+				2229F8BD1FCDD9690063E123 /* GalleryCell.swift */,
+				22CB17E01FD09D8A00F3C75A /* GalleryHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		166EDA711F96596300ECF1A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				166EDA731F96597600ECF1A5 /* VO */,
+				166EDA721F96596B00ECF1A5 /* Enumeration */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		166EDA721F96596B00ECF1A5 /* Enumeration */ = {
+			isa = PBXGroup;
+			children = (
+				164F62CF1F965BB3008CC020 /* DayOfWeekEnum.swift */,
+				164F62D31F966507008CC020 /* TaskTimeInterval.swift */,
+				164F62D51F967C91008CC020 /* SubTaskStatus.swift */,
+			);
+			path = Enumeration;
+			sourceTree = "<group>";
+		};
+		166EDA731F96597600ECF1A5 /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				164F62CD1F965B1D008CC020 /* Task.swift */,
+				963CFFF01FBB817500C24837 /* User.swift */,
+				1673F7F91FCDC91100406D8B /* Mandala.swift */,
+			);
+			path = VO;
+			sourceTree = "<group>";
+		};
+		166EDA741F96598900ECF1A5 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				164F62D71F967F76008CC020 /* TaskCreationHelper.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		166EDA751F96599600ECF1A5 /* Mechanism */ = {
+			isa = PBXGroup;
+			children = (
+				16AB950D1F9A779400A7451D /* DatesHelperMechanism.swift */,
+				169154BF1FC49B2400595B04 /* IconSelectionMechanism.swift */,
+				2273ADAC1FE04F0E00686F42 /* MandalaGenerator.swift */,
+				1689FF361FE0CAA800485542 /* ImageTransparentCropper.swift */,
+			);
+			path = Mechanism;
+			sourceTree = "<group>";
+		};
+		166EDA761F9659A000ECF1A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				168BA81F1F992DA5006DEC5A /* FirebasePersistence.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		167895481F9A4BCD00D0AEBB /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				167895491F9A4BF200D0AEBB /* TopFlowLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		16F5CC2A1FA27A2200A632EB /* NewTaskInputs */ = {
+			isa = PBXGroup;
+			children = (
+				16F5CC2B1FA27A5000A632EB /* TaskInputDateVC.swift */,
+				166E0C631FAA323E008CDDEF /* TaskInputNameVC.swift */,
+				1683C0AC1FB35BC9004E00AB /* TaskInputOverviewVC.swift */,
+				169515891FB4BBAA009FADC9 /* InputInfoExchangeProtocol.swift */,
+			);
+			path = NewTaskInputs;
+			sourceTree = "<group>";
+		};
+		2229F8BA1FCDCD040063E123 /* Gallery Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2229F8BB1FCDCD460063E123 /* MainGalleryVC.swift */,
+				1679710D1FCF242900E166EA /* MandalaFromTaskVC.swift */,
+				6686DA871FCF3DE1003BD84B /* MandalaFromTaskDetail.swift */,
+			);
+			path = "Gallery Controllers";
+			sourceTree = "<group>";
+		};
+		23E03D135ACCC69D638E7FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				548B492842F59FEFC0FFB0A6 /* Pods-NelsonMandala_app.debug.xcconfig */,
+				5B07E7E2BB8BB87822613475 /* Pods-NelsonMandala_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E7E5B4F589E2BF4F0A65D86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36EE7D03CC0791A225FF1F46 /* Pods_NelsonMandala_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9636085C1FAA0A99000DC303 /* New Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9636085F1FAA0ACD000DC303 /* MainController */,
+			);
+			path = "New Controllers";
+			sourceTree = "<group>";
+		};
+		9636085F1FAA0ACD000DC303 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				9636085D1FAA0AB9000DC303 /* MainController.swift */,
+				963608601FAA0AE5000DC303 /* MainController+TableView.swift */,
+				963608641FAA1F0F000DC303 /* MainController+WeekView.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		963608671FAA33F6000DC303 /* Colors&Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				963608691FAA3415000DC303 /* Colors&Fonts.swift */,
+			);
+			path = "Colors&Fonts";
+			sourceTree = "<group>";
+		};
+		966DD7111FA796EF00FF1509 /* New Story */ = {
+			isa = PBXGroup;
+			children = (
+				6671C8E21FE2FB7F0074CAC0 /* MainInterface.storyboard */,
+				6671C8E61FE2FB9B0074CAC0 /* InputNewTask.storyboard */,
+				6671C8EA1FE2FBAB0074CAC0 /* LoginInterface.storyboard */,
+				6671C8EF1FE2FBB30074CAC0 /* MandalaMaker.storyboard */,
+				6671C8F41FE2FBC60074CAC0 /* SectionTimePicker.storyboard */,
+				6671C8F91FE2FBD20074CAC0 /* Gallery.storyboard */,
+				6671C8FE1FE2FBDC0074CAC0 /* GalleryMandalasFromATask.storyboard */,
+				6671C9031FE2FBF60074CAC0 /* GalleryDetails.storyboard */,
+			);
+			path = "New Story";
+			sourceTree = "<group>";
+		};
+		966DD7161FA7A13300FF1509 /* NewInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9636085A1FA9FF68000DC303 /* CardTaskCell.swift */,
+				966DD7141FA799E200FF1509 /* MainHeader.swift */,
+				16653F491FA8CFBA00150D53 /* SubHeaderView.swift */,
+			);
+			path = NewInterfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		163F87931F9539C10032DF2C /* NelsonMandala_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 163F87A61F9539C10032DF2C /* Build configuration list for PBXNativeTarget "NelsonMandala_app" */;
+			buildPhases = (
+				824DF172D42344B2FF49E8FE /* [CP] Check Pods Manifest.lock */,
+				163F87901F9539C10032DF2C /* Sources */,
+				163F87911F9539C10032DF2C /* Frameworks */,
+				163F87921F9539C10032DF2C /* Resources */,
+				ADB84A3D099AB21985B83F9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NelsonMandala_app;
+			productName = NelsonMandala_app;
+			productReference = 163F87941F9539C10032DF2C /* NelsonMandala_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		163F878C1F9539C10032DF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = lucasSantos;
+				TargetAttributes = {
+					163F87931F9539C10032DF2C = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 163F878F1F9539C10032DF2C /* Build configuration list for PBXProject "NelsonMandala_app" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 163F878B1F9539C10032DF2C;
+			productRefGroup = 163F87951F9539C10032DF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				163F87931F9539C10032DF2C /* NelsonMandala_app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		163F87921F9539C10032DF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6671C8F71FE2FBD20074CAC0 /* Gallery.storyboard in Resources */,
+				6662AED31FE42F89005EFE33 /* Localizable.strings in Resources */,
+				165EFF5A1FB9F8CB002880EF /* GoogleService-Info.plist in Resources */,
+				163F87A21F9539C10032DF2C /* LaunchScreen.storyboard in Resources */,
+				6671C8FC1FE2FBDC0074CAC0 /* GalleryMandalasFromATask.storyboard in Resources */,
+				163F879F1F9539C10032DF2C /* Assets.xcassets in Resources */,
+				6671C9011FE2FBF60074CAC0 /* GalleryDetails.storyboard in Resources */,
+				6671C8F21FE2FBC60074CAC0 /* SectionTimePicker.storyboard in Resources */,
+				6671C8ED1FE2FBB30074CAC0 /* MandalaMaker.storyboard in Resources */,
+				6671C8E41FE2FB9B0074CAC0 /* InputNewTask.storyboard in Resources */,
+				6671C8E81FE2FBAB0074CAC0 /* LoginInterface.storyboard in Resources */,
+				6671C8E01FE2FB7F0074CAC0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		824DF172D42344B2FF49E8FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NelsonMandala_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB84A3D099AB21985B83F9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NelsonMandala_app/Pods-NelsonMandala_app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HGCircularSlider/HGCircularSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/Haneke/Haneke.framework",
+				"${BUILT_PRODUCTS_DIR}/ScaledVisibleCellsCollectionView/ScaledVisibleCellsCollectionView.framework",
+				"${BUILT_PRODUCTS_DIR}/XMSegmentedControl/XMSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGCircularSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haneke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScaledVisibleCellsCollectionView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NelsonMandala_app/Pods-NelsonMandala_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163F87901F9539C10032DF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165EFF581FB9F254002880EF /* LoginVC.swift in Sources */,
+				16A5DECE1F9FD25C00F8C9A5 /* SubTaskVC.swift in Sources */,
+				22CB17E11FD09D8A00F3C75A /* GalleryHeaderView.swift in Sources */,
+				963608651FAA1F0F000DC303 /* MainController+WeekView.swift in Sources */,
+				9636085B1FA9FF68000DC303 /* CardTaskCell.swift in Sources */,
+				E6BB7F471FBCE55D009F07F8 /* MandalaView.swift in Sources */,
+				16AB950E1F9A779400A7451D /* DatesHelperMechanism.swift in Sources */,
+				16A5DED21FA107C000F8C9A5 /* TaskTableViewCell.swift in Sources */,
+				168BA8201F992DA5006DEC5A /* FirebasePersistence.swift in Sources */,
+				164F62D41F966507008CC020 /* TaskTimeInterval.swift in Sources */,
+				E631BE001FC876B300970320 /* NotificationController.swift in Sources */,
+				963608611FAA0AE5000DC303 /* MainController+TableView.swift in Sources */,
+				966DD7151FA799E200FF1509 /* MainHeader.swift in Sources */,
+				164C74691FC5F6AD00B4CFAB /* IconCollectionViewCell.swift in Sources */,
+				E6BB7F481FBCE55D009F07F8 /* MandalaMakerViewController.swift in Sources */,
+				164F62CE1F965B1D008CC020 /* Task.swift in Sources */,
+				164F62D81F967F76008CC020 /* TaskCreationHelper.swift in Sources */,
+				E6BB7F491FBCE55D009F07F8 /* SectionTimePickerViewController.swift in Sources */,
+				963CFFF11FBB817500C24837 /* User.swift in Sources */,
+				164F62D01F965BB3008CC020 /* DayOfWeekEnum.swift in Sources */,
+				2273ADAD1FE04F0E00686F42 /* MandalaGenerator.swift in Sources */,
+				963CFFEF1FBB7FF500C24837 /* errorsOfFirebase.swift in Sources */,
+				1678954A1F9A4BF200D0AEBB /* TopFlowLayout.swift in Sources */,
+				16096C001FA798660006DA55 /* weekCalendarView.swift in Sources */,
+				9636086A1FAA3415000DC303 /* Colors&Fonts.swift in Sources */,
+				1683C0AD1FB35BC9004E00AB /* TaskInputOverviewVC.swift in Sources */,
+				16F5CC291FA26D6600A632EB /* NewTaskPageVC.swift in Sources */,
+				167895471F9A4AEF00D0AEBB /* SubTaskCard.swift in Sources */,
+				9636085E1FAA0AB9000DC303 /* MainController.swift in Sources */,
+				16F5CC2C1FA27A5000A632EB /* TaskInputDateVC.swift in Sources */,
+				2229F8BE1FCDD9690063E123 /* GalleryCell.swift in Sources */,
+				1679710E1FCF242900E166EA /* MandalaFromTaskVC.swift in Sources */,
+				164F62D61F967C91008CC020 /* SubTaskStatus.swift in Sources */,
+				1673F7FA1FCDC91100406D8B /* Mandala.swift in Sources */,
+				1679765F1FBB6B4F0098E899 /* ShadowViewExtension.swift in Sources */,
+				16653F4A1FA8CFBA00150D53 /* SubHeaderView.swift in Sources */,
+				165EFF5C1FBA0309002880EF /* SegmentView.swift in Sources */,
+				168BA81C1F98F0DB006DEC5A /* DaySelectView.swift in Sources */,
+				166E0C641FAA323E008CDDEF /* TaskInputNameVC.swift in Sources */,
+				1695158A1FB4BBAA009FADC9 /* InputInfoExchangeProtocol.swift in Sources */,
+				6662AED01FE42D5A005EFE33 /* String + Localized.swift in Sources */,
+				1689FF371FE0CAA800485542 /* ImageTransparentCropper.swift in Sources */,
+				2229F8BC1FCDCD460063E123 /* MainGalleryVC.swift in Sources */,
+				16A5DED01FA1063000F8C9A5 /* TasksListVC.swift in Sources */,
+				163F87981F9539C10032DF2C /* AppDelegate.swift in Sources */,
+				6686DA881FCF3DE1003BD84B /* MandalaFromTaskDetail.swift in Sources */,
+				169154C01FC49B2400595B04 /* IconSelectionMechanism.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		163F87A01F9539C10032DF2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				163F87A11F9539C10032DF2C /* Base */,
+				6671C8DF1FE2FAB20074CAC0 /* pt-BR */,
+				6671C91D1FE300840074CAC0 /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6662AED51FE42F89005EFE33 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6662AED41FE42F89005EFE33 /* en */,
+				6662AED61FE42F8D005EFE33 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6671C8E21FE2FB7F0074CAC0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C9071FE2FFB00074CAC0 /* Base */,
+				6671C9091FE2FFBC0074CAC0 /* pt-BR */,
+				6671C90D1FE300080074CAC0 /* en */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C8E61FE2FB9B0074CAC0 /* InputNewTask.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C8E71FE2FBA30074CAC0 /* Base */,
+				6671C90B1FE2FFCC0074CAC0 /* pt-BR */,
+				6671C90F1FE300100074CAC0 /* en */,
+			);
+			name = InputNewTask.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C8EA1FE2FBAB0074CAC0 /* LoginInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C8E91FE2FBAB0074CAC0 /* Base */,
+				6671C8EC1FE2FBAE0074CAC0 /* pt-BR */,
+				6671C9111FE300150074CAC0 /* en */,
+			);
+			name = LoginInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C8EF1FE2FBB30074CAC0 /* MandalaMaker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C8EE1FE2FBB30074CAC0 /* Base */,
+				6671C8F11FE2FBB80074CAC0 /* pt-BR */,
+				6671C9131FE3001A0074CAC0 /* en */,
+			);
+			name = MandalaMaker.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C8F41FE2FBC60074CAC0 /* SectionTimePicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C8F31FE2FBC60074CAC0 /* Base */,
+				6671C8F61FE2FBCA0074CAC0 /* pt-BR */,
+				6671C9151FE3001E0074CAC0 /* en */,
+			);
+			name = SectionTimePicker.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C8F91FE2FBD20074CAC0 /* Gallery.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C8F81FE2FBD20074CAC0 /* Base */,
+				6671C8FB1FE2FBD50074CAC0 /* pt-BR */,
+				6671C9171FE300220074CAC0 /* en */,
+			);
+			name = Gallery.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C8FE1FE2FBDC0074CAC0 /* GalleryMandalasFromATask.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C8FD1FE2FBDC0074CAC0 /* Base */,
+				6671C9001FE2FBF00074CAC0 /* pt-BR */,
+				6671C9191FE3007A0074CAC0 /* en */,
+			);
+			name = GalleryMandalasFromATask.storyboard;
+			sourceTree = "<group>";
+		};
+		6671C9031FE2FBF60074CAC0 /* GalleryDetails.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6671C9021FE2FBF60074CAC0 /* Base */,
+				6671C9051FE2FBF80074CAC0 /* pt-BR */,
+				6671C91B1FE3007F0074CAC0 /* en */,
+			);
+			name = GalleryDetails.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		163F87A41F9539C10032DF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		163F87A51F9539C10032DF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		163F87A71F9539C10032DF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548B492842F59FEFC0FFB0A6 /* Pods-NelsonMandala_app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NelsonMandala_app/NelsonMandala_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NelsonMandala_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nil.NelsonMandala-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		163F87A81F9539C10032DF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B07E7E2BB8BB87822613475 /* Pods-NelsonMandala_app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NelsonMandala_app/NelsonMandala_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NelsonMandala_app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nil.NelsonMandala-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163F878F1F9539C10032DF2C /* Build configuration list for PBXProject "NelsonMandala_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163F87A41F9539C10032DF2C /* Debug */,
+				163F87A51F9539C10032DF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		163F87A61F9539C10032DF2C /* Build configuration list for PBXNativeTarget "NelsonMandala_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163F87A71F9539C10032DF2C /* Debug */,
+				163F87A81F9539C10032DF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 163F878C1F9539C10032DF2C /* Project object */;
+}

@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Cronograma"; ObjectID = "0ea-ea-Pc3"; */
+"0ea-ea-Pc3.text" = "Cronograma";
+
+/* Class = "UILabel"; text = "Início da tarefa:"; ObjectID = "4JX-ly-yNA"; */
+"4JX-ly-yNA.text" = "Início da tarefa:";
+
+/* Class = "UITextField"; placeholder = "Escolha a data"; ObjectID = "769-wk-Y1i"; */
+"769-wk-Y1i.placeholder" = "Escolha a data";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "AbU-Xi-3Aq"; */
+"AbU-Xi-3Aq.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "Final:"; ObjectID = "CzC-Rr-bnW"; */
+"CzC-Rr-bnW.text" = "Final:";
+
+/* Class = "UILabel"; text = "Dias de trabalho:"; ObjectID = "Dvh-m8-iWs"; */
+"Dvh-m8-iWs.text" = "Dias de trabalho:";
+
+/* Class = "UILabel"; text = "Final"; ObjectID = "Exi-Hh-OH1"; */
+"Exi-Hh-OH1.text" = "Final";
+
+/* Class = "UITextField"; placeholder = "Esolha uma data"; ObjectID = "Fn5-t1-MoK"; */
+"Fn5-t1-MoK.placeholder" = "Esolha uma data";
+
+/* Class = "UILabel"; text = "Escolha um ícone:"; ObjectID = "Ilu-9Q-wkQ"; */
+"Ilu-9Q-wkQ.text" = "Escolha um ícone:";
+
+/* Class = "UITextField"; placeholder = "Digite o nome da tarefa"; ObjectID = "V0O-pH-BhN"; */
+"V0O-pH-BhN.placeholder" = "Digite o nome da tarefa";
+
+/* Class = "UILabel"; text = "10 days of work"; ObjectID = "dIv-3r-GUB"; */
+"dIv-3r-GUB.text" = "10 days of work";
+
+/* Class = "UILabel"; text = "Dados básicos"; ObjectID = "eCL-Lk-pxA"; */
+"eCL-Lk-pxA.text" = "Dados básicos";
+
+/* Class = "UILabel"; text = "29/12/2017"; ObjectID = "eZn-hr-yH0"; */
+"eZn-hr-yH0.text" = "29/12/2017";
+
+/* Class = "UILabel"; text = "Cor"; ObjectID = "fFe-5u-fh5"; */
+"fFe-5u-fh5.text" = "Cor";
+
+/* Class = "UILabel"; text = "Physics Study"; ObjectID = "hff-ca-YB6"; */
+"hff-ca-YB6.text" = "Physics Study";
+
+/* Class = "UILabel"; text = "Início da tarefa"; ObjectID = "i1s-hM-yv1"; */
+"i1s-hM-yv1.text" = "Início da tarefa";
+
+/* Class = "UILabel"; text = "Lembretes"; ObjectID = "mKk-T4-el6"; */
+"mKk-T4-el6.text" = "Lembretes";
+
+/* Class = "UILabel"; text = "22/12/2017"; ObjectID = "mLQ-dD-Mn9"; */
+"mLQ-dD-Mn9.text" = "22/12/2017";

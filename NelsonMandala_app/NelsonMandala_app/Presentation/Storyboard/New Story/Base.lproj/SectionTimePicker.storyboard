@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pxS-r7-K7P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Roman</string>
+        </array>
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W3</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Set Timer-->
+        <scene sceneID="UMt-NF-I5q">
+            <objects>
+                <viewController title="Set Timer" id="pxS-r7-K7P" customClass="SectionTimePickerViewController" customModule="NelsonMandala_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPw-ad-ywc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="mMs-06-eTe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembre:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRv-nx-mmj">
+                                <rect key="frame" x="131.5" y="101" width="111" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" red="0.98431372549019602" green="0.37647058823529411" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06b-xE-g03">
+                                <rect key="frame" x="16" y="25" width="30" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ycC-fM-M5J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="36"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.98580676317214966" green="0.35528552532196045" blue="0.74931305646896362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissTask:" destination="pxS-r7-K7P" eventType="touchUpInside" id="1Zu-Mp-tZ7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9j-Qe-Wzs">
+                                <rect key="frame" x="38" y="159" width="300" height="116.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tls-cb-Qda"/>
+                                </constraints>
+                                <string key="text">Para você completar a mandala, você deve focar nas suas tarefas! sem pausar ou fechar o app, sempre mantendo a tela do seu dispositivo virada para baixo</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-go-Isr" customClass="CircularSlider" customModule="HGCircularSlider">
+                                <rect key="frame" x="11.5" y="276" width="352.5" height="352.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:10" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtW-Qc-pjj">
+                                        <rect key="frame" x="-0.5" y="114.5" width="352.5" height="123"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="90"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to Focus" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="125" translatesAutoresizingMaskIntoConstraints="NO" id="no4-8C-GeI">
+                                        <rect key="frame" x="0.0" y="102" width="352.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaD-tk-ShZ">
+                                        <rect key="frame" x="152.5" y="237.5" width="46" height="43"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <segue destination="qNW-n6-osC" kind="show" identifier="startMandala" id="Vaq-mY-VSC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="UaD-tk-ShZ" firstAttribute="top" secondItem="UtW-Qc-pjj" secondAttribute="bottom" id="J3g-Df-5ZF"/>
+                                    <constraint firstItem="UtW-Qc-pjj" firstAttribute="width" secondItem="qHv-go-Isr" secondAttribute="width" id="LKQ-rs-JkP"/>
+                                    <constraint firstItem="no4-8C-GeI" firstAttribute="width" secondItem="qHv-go-Isr" secondAttribute="width" id="LlF-wq-HAj"/>
+                                    <constraint firstAttribute="width" secondItem="qHv-go-Isr" secondAttribute="height" multiplier="1:1" id="biu-Lf-R6t"/>
+                                    <constraint firstItem="UaD-tk-ShZ" firstAttribute="centerX" secondItem="qHv-go-Isr" secondAttribute="centerX" id="hop-e9-tAh"/>
+                                    <constraint firstItem="UtW-Qc-pjj" firstAttribute="centerX" secondItem="qHv-go-Isr" secondAttribute="centerX" id="lXv-qi-VWm"/>
+                                    <constraint firstItem="no4-8C-GeI" firstAttribute="top" secondItem="qHv-go-Isr" secondAttribute="bottom" multiplier="0.29" id="mZU-vL-y8C"/>
+                                    <constraint firstItem="UtW-Qc-pjj" firstAttribute="centerY" secondItem="qHv-go-Isr" secondAttribute="centerY" id="qIe-5g-8m4"/>
+                                    <constraint firstItem="no4-8C-GeI" firstAttribute="centerX" secondItem="qHv-go-Isr" secondAttribute="centerX" id="sRa-On-KUV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskFillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="backtrackLineWidth">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbTintColor">
+                                        <color key="value" red="0.15686274509803921" green="0.16862745098039217" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfRounds">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="thumbLineWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeHighlightedColor">
+                                        <color key="value" red="0.15686274510000001" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endThumbStrokeColor">
+                                        <color key="value" red="0.15686274510000001" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ky-Fg-FC6" userLabel="Title">
+                                <rect key="frame" x="147" y="37" width="80" height="25"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.37647058820000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="trailing" secondItem="MvD-fy-E4K" secondAttribute="trailing" id="1eN-fY-8Mq"/>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="top" secondItem="fPw-ad-ywc" secondAttribute="top" id="Biq-Y2-Iti"/>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="leading" secondItem="MvD-fy-E4K" secondAttribute="leading" id="Gr7-f0-1sV"/>
+                            <constraint firstItem="cRv-nx-mmj" firstAttribute="centerX" secondItem="7ky-Fg-FC6" secondAttribute="centerX" id="RyN-3W-EEw"/>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="top" secondItem="06b-xE-g03" secondAttribute="top" constant="-25" id="UN5-Ra-wUg"/>
+                            <constraint firstItem="qHv-go-Isr" firstAttribute="centerX" secondItem="MvD-fy-E4K" secondAttribute="centerX" id="Vli-mE-6Ug"/>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="top" secondItem="7ky-Fg-FC6" secondAttribute="top" constant="-37" id="cQe-id-CzY"/>
+                            <constraint firstItem="7ky-Fg-FC6" firstAttribute="centerX" secondItem="mMs-06-eTe" secondAttribute="centerX" id="eos-Og-cgN"/>
+                            <constraint firstItem="qHv-go-Isr" firstAttribute="bottom" secondItem="MvD-fy-E4K" secondAttribute="bottom" multiplier="0.98" constant="-25.159999999999968" id="igp-hf-VTc"/>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="leading" secondItem="06b-xE-g03" secondAttribute="leading" constant="-16" id="lVT-Mh-yts"/>
+                            <constraint firstItem="mMs-06-eTe" firstAttribute="bottom" secondItem="MvD-fy-E4K" secondAttribute="bottom" id="olW-91-4Zy"/>
+                            <constraint firstItem="cRv-nx-mmj" firstAttribute="top" secondItem="7ky-Fg-FC6" secondAttribute="bottom" constant="39" id="spQ-Ga-Xlu"/>
+                            <constraint firstItem="qHv-go-Isr" firstAttribute="width" secondItem="MvD-fy-E4K" secondAttribute="width" multiplier="0.94" id="tAs-mH-bbg"/>
+                            <constraint firstItem="d9j-Qe-Wzs" firstAttribute="top" secondItem="cRv-nx-mmj" secondAttribute="bottom" constant="17.5" id="tUB-zK-Uas"/>
+                            <constraint firstItem="d9j-Qe-Wzs" firstAttribute="centerX" secondItem="mMs-06-eTe" secondAttribute="centerX" id="xPW-g1-avy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MvD-fy-E4K"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dhh-e5-jSC">
+                        <barButtonItem key="backBarButtonItem" title="&lt;" id="i3Q-31-frt"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="circularSlider" destination="qHv-go-Isr" id="pJz-Vp-hTX"/>
+                        <outlet property="rememberLabel" destination="cRv-nx-mmj" id="ILM-zM-gak"/>
+                        <outlet property="returnButton" destination="06b-xE-g03" id="l1O-rz-Io6"/>
+                        <outlet property="startButton" destination="UaD-tk-ShZ" id="i3Z-hW-7Tl"/>
+                        <outlet property="taskTitleLabel" destination="7ky-Fg-FC6" id="AjB-UA-PHE"/>
+                        <outlet property="timeLabel" destination="UtW-Qc-pjj" id="ruR-Pu-bJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frH-iG-oV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="124.58770614692655"/>
+        </scene>
+        <!--MandalaMaker-->
+        <scene sceneID="lif-GQ-vN1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MandalaMaker" id="qNW-n6-osC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPb-jS-jjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle 5" width="375" height="667"/>
+    </resources>
+</document>
