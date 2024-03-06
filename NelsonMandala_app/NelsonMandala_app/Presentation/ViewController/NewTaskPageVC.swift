@@ -297,6 +297,7 @@ extension NewTaskPageVC {
         guard let uid = Auth.auth().currentUser?.uid else {
 //            fatalError("VOCE NAO ESTA LOGADO!")
             print("VOCE NAO ESTA LOGADO!")
+            return
         }
         
         let ref = Database.database().reference().child("user-task").child(id)
