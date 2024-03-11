@@ -7,13 +7,24 @@ target 'NelsonMandala_app' do
 
   # Pods for NelsonMandala_app
   pod 'XMSegmentedControl'
-  pod 'Firebase/Auth'
+  #pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
   pod 'ScaledVisibleCellsCollectionView'
   pod 'Haneke', '~> 1.0'
   pod 'HGCircularSlider', '~> 2.0.0'
+  
+  # Add the Firebase pod for Google Analytics
+  pod 'FirebaseAnalytics'
+
+  # For Analytics without IDFA collection capability, use this pod instead
+  # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
+
+  # Add the pods for any other Firebase products you want to use in your app
+  # For example, to use Firebase Authentication and Cloud Firestore
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
 end
 

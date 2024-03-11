@@ -260,7 +260,7 @@ extension NewTaskPageVC: InuptInfoExchangeProtocol {
         //salva thisTask do jeito que tá no firebase
         //NESSE BLOCO DE COMPLETION DA PRA ATIVAR UMA ANIMACAO MANEIRA DE DADOS SALVOS NO VIEW CONTROLLER PRINCIPAL
         
-        if let key = fbAddNewTask(){
+        if let key = fbAddNewTask() {
             fbConnectUserTask(TaskKey: key)
         }
     }
@@ -276,11 +276,17 @@ extension NewTaskPageVC {
     /// Seta a task na tabela de TASKS e retorna a key da task
     ///
     /// - Returns: TaskKey(String)
-    func fbAddNewTask()->String? {
+    func fbAddNewTask() -> String? {
         let ref = Database.database().reference().child("tasks")
         let randomKey = ref.childByAutoId()
         
-        randomKey.updateChildValues(["name":thisTask.name!, "initTimeStamp":thisTask.initTimeStamp!, "deadLineTimeStamp":thisTask.deadLineTimeStamp!,"reminderDates":thisTask.reminders!, "color":thisTask.colorAux!.description,  "currentWorkedSeconds":thisTask.currentWorkedSeconds!, "icon":thisTask.icon!]) { (error, ref2) in
+        randomKey.updateChildValues(["name": thisTask.name!,
+                                     "initTimeStamp": thisTask.initTimeStamp!,
+                                     "deadLineTimeStamp": thisTask.deadLineTimeStamp!,
+                                     "reminderDates": thisTask.reminders!,
+                                     "color": thisTask.colorAux!.description,
+                                     "currentWorkedSeconds": thisTask.currentWorkedSeconds!,
+                                     "icon": thisTask.icon!]) { (error, ref2) in
             if error != nil {
                 fatalError("Nao inseriu a task")
             }
@@ -293,25 +299,22 @@ extension NewTaskPageVC {
     /// Após a setagem finaliza
     /// - Parameter key: TaskKey(String)
     func fbConnectUserTask(TaskKey key:String){
-        var id = "123"
+//        var id = "123"
         guard let uid = Auth.auth().currentUser?.uid else {
 //            fatalError("VOCE NAO ESTA LOGADO!")
             print("VOCE NAO ESTA LOGADO!")
             return
         }
         
-        let ref = Database.database().reference().child("user-task").child(id)
+        let ref = Database.database().reference().child("user-task").child(uid)
         
         ref.updateChildValues([key:"task"]) { (error, ref) in
             if error != nil {
                 fatalError("NAO ESTÁ RELACIONANDO")
             }
+            self.dismiss(animated: true, completion: nil)
         }
         
         self.dismiss(animated: true, completion: nil)
     }
 }
-
-
-
-

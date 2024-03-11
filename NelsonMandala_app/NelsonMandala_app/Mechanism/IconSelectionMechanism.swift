@@ -33,7 +33,5 @@ class IconSelectionMechanism {
             return UIImage(named: "PandaIcon")!
         }
     }
-    
     //class func int
-    
 }

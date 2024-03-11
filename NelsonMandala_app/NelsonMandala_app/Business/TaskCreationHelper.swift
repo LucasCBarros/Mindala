@@ -37,7 +37,6 @@ class TaskCreationHelper {
         componentsDeadline.minute = 59
         endDate = calendarDeadline.date(from: componentsDeadline)!
 
-
         var testingDate = initDate
         
         while testingDate.timeIntervalSince1970 <= endDate.timeIntervalSince1970 {
@@ -45,7 +44,6 @@ class TaskCreationHelper {
             if(weekDayIsOnArray(weekDay: dayOfWeek)){
                 suitableDates.append(testingDate)
             }
-            
             //add 1 day to the date
             testingDate = NSCalendar.current.date(byAdding: .day, value: 1, to: testingDate, wrappingComponents: false)!
         }
@@ -64,8 +62,6 @@ class TaskCreationHelper {
 
 //Extensão com funcoes helper pra criar as datas
 extension TaskCreationHelper{
-    
-    
     fileprivate func weekDayIsOnArray(weekDay: Int) -> Bool{
         var validDays: [Int] = []
         for d in task.progressDays! {
@@ -73,7 +69,6 @@ extension TaskCreationHelper{
         }
         return validDays.contains(weekDay)
     }
-    
     
     fileprivate func getNameFromEnum(dayOfWeek: Int) -> String{
         let value = DayOfWeekEnum(rawValue: dayOfWeek)!
@@ -95,6 +90,4 @@ extension TaskCreationHelper{
             return "Sunday"
         }
     }
-    
 }
-

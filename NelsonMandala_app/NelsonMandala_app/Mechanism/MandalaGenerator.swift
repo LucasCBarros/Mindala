@@ -54,7 +54,6 @@ class MandalaGenerator:NSObject {
             context.setStrokeColor(UIColor.black.cgColor)
             context.strokePath()
         }
-        
         return img
     }
     
@@ -73,7 +72,6 @@ class MandalaGenerator:NSObject {
     func headsOrTails() -> Bool {
         return random(0..<2) % 2 == 0
     }
-    
 }
 
 extension MandalaGenerator: CALayerDelegate {
@@ -192,7 +190,6 @@ class CALayerPattern: CALayer {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
     
     func desenha(){
         // ...

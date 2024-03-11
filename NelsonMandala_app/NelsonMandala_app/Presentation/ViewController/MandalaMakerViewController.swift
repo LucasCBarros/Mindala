@@ -198,19 +198,35 @@ extension MandalaMakerViewController {
             }
             self.createMandalaOnFB()
         }
-        
     }
     
-    func createMandalaOnFB() {
+    func uploadImageToFirebaseStorage(onSuccess: @escaping (_ imageUrl: String) -> Void) {
+//        let photoIdString = NSUUID().uuidString
+        
+        
         if let uid = Auth.auth().currentUser?.uid {
-            let ref = Storage.storage().reference().child(uid).child(String(Date().timeIntervalSince1970) + ".png")
-            if let representation = mandalaImage.image!.pngData() {
-                ref.putData(representation, metadata: nil, completion: { (metadata, error) in
-                    if error != nil {
-                        fatalError("Nao inseriu a imagem")
+            let storageRef = Storage.storage().reference().child(uid).child(String(Date().timeIntervalSince1970) + ".png")
+
+            guard let representation = mandalaImage.image!.pngData() else {
+                fatalError("Nao inseriu a imagem")
+            }
+            
+            storageRef.putData(representation, metadata: nil) { (metadata, error) in
+                if let error = error {
+                    debugPrint(error.localizedDescription)
+                    return
+                }
+                
+                metadata?.storageReference?.downloadURL(completion: { (url, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
                     }
+                    
+//                    onSuccess("\(url!)")
+                    
                     //Criação da Mandala na DB
-                    if let mandalaURL = metadata?.downloadURL()?.absoluteString {
+                    if let mandalaURL = metadata?.name { // }.downloadURL()?.absoluteString {
                         let randomKey = Database.database().reference().child("mandala").childByAutoId()
                         let completionDate = Date().timeIntervalSince1970 as NSNumber
                         randomKey.updateChildValues(["completionDate":completionDate, "workingTime":self.currentTime, "imageKey":mandalaURL], withCompletionBlock: { (error, dbRef) in
@@ -225,7 +241,50 @@ extension MandalaMakerViewController {
                                     fatalError("NAO INSERIU FEZ A RELAÇÃO")
                                 }
                             })
+                        })
+                    }
+                })
+            }
+        }
+    }
+    
+    func createMandalaOnFB() {
+        if let uid = Auth.auth().currentUser?.uid {
+            let ref = Storage.storage().reference().child(uid).child(String(Date().timeIntervalSince1970) + ".png")
+            
+            if let representation = mandalaImage.image!.pngData() {
+                
+                ref.putData(representation, metadata: nil, completion: { (metadata, error) in
+                    if error != nil {
+                        fatalError("Nao inseriu a imagem")
+                    }
+                    
+                    //Criação da Mandala na DB
+                    if let mandalaURL = metadata?.name { //.downloadURL()?.absoluteString {
+                        let randomKey = Database.database().reference().child("mandala").childByAutoId()
+                        let completionDate = Date().timeIntervalSince1970 as NSNumber
+                        
+                        randomKey.updateChildValues(["completionDate":completionDate,
+                                                     "workingTime":self.currentTime,
+                                                     "imageKey":mandalaURL],
+                                                    withCompletionBlock: { (error, dbRef) in
+                            guard let error else {
+                                print("Nao inseriu as informacoes da mandala")
+                                return
+                            }
+//                            if error != nil {
+//                                fatalError("Nao inseriu as informacoes da mandala")
+//                            }
                             
+                            //Criação da relação entre mandala-task
+                            let taskMandaRef = Database.database().reference().child("task-mandala").child(self.doingTask!.key!)
+                            
+                            taskMandaRef.updateChildValues([randomKey.key:"mandala"],
+                                                           withCompletionBlock: { (error, ref) in
+                                if error != nil {
+                                    fatalError("NAO INSERIU FEZ A RELAÇÃO")
+                                }
+                            })
                         })
                     }
                 })

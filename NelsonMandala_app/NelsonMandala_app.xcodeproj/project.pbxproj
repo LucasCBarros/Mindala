@@ -18,7 +18,6 @@
 		164F62D61F967C91008CC020 /* SubTaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62D51F967C91008CC020 /* SubTaskStatus.swift */; };
 		164F62D81F967F76008CC020 /* TaskCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F62D71F967F76008CC020 /* TaskCreationHelper.swift */; };
 		165EFF581FB9F254002880EF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EFF571FB9F254002880EF /* LoginVC.swift */; };
-		165EFF5A1FB9F8CB002880EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 165EFF591FB9F8CB002880EF /* GoogleService-Info.plist */; };
 		165EFF5C1FBA0309002880EF /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EFF5B1FBA0309002880EF /* SegmentView.swift */; };
 		16653F4A1FA8CFBA00150D53 /* SubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16653F491FA8CFBA00150D53 /* SubHeaderView.swift */; };
 		166E0C641FAA323E008CDDEF /* TaskInputNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E0C631FAA323E008CDDEF /* TaskInputNameVC.swift */; };
@@ -63,6 +62,7 @@
 		963CFFEF1FBB7FF500C24837 /* errorsOfFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CFFEE1FBB7FF500C24837 /* errorsOfFirebase.swift */; };
 		963CFFF11FBB817500C24837 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CFFF01FBB817500C24837 /* User.swift */; };
 		966DD7151FA799E200FF1509 /* MainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966DD7141FA799E200FF1509 /* MainHeader.swift */; };
+		E628E3D12B9E9F6A0018117F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E628E3D02B9E9F6A0018117F /* GoogleService-Info.plist */; };
 		E631BE001FC876B300970320 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631BDFF1FC876B300970320 /* NotificationController.swift */; };
 		E6BB7F471FBCE55D009F07F8 /* MandalaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB7F441FBCE55D009F07F8 /* MandalaView.swift */; };
 		E6BB7F481FBCE55D009F07F8 /* MandalaMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BB7F451FBCE55D009F07F8 /* MandalaMakerViewController.swift */; };
@@ -83,7 +83,6 @@
 		164F62D51F967C91008CC020 /* SubTaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTaskStatus.swift; sourceTree = "<group>"; };
 		164F62D71F967F76008CC020 /* TaskCreationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationHelper.swift; sourceTree = "<group>"; };
 		165EFF571FB9F254002880EF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		165EFF591FB9F8CB002880EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		165EFF5B1FBA0309002880EF /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		16653F491FA8CFBA00150D53 /* SubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeaderView.swift; sourceTree = "<group>"; };
 		166E0C631FAA323E008CDDEF /* TaskInputNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputNameVC.swift; sourceTree = "<group>"; };
@@ -150,6 +149,7 @@
 		963CFFEE1FBB7FF500C24837 /* errorsOfFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = errorsOfFirebase.swift; path = ../errorsOfFirebase.swift; sourceTree = "<group>"; };
 		963CFFF01FBB817500C24837 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		966DD7141FA799E200FF1509 /* MainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeader.swift; sourceTree = "<group>"; };
+		E628E3D02B9E9F6A0018117F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E631BDFF1FC876B300970320 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		E6BB7F441FBCE55D009F07F8 /* MandalaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandalaView.swift; sourceTree = "<group>"; };
 		E6BB7F451FBCE55D009F07F8 /* MandalaMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandalaMakerViewController.swift; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 				166EDA751F96599600ECF1A5 /* Mechanism */,
 				166EDA741F96598900ECF1A5 /* Business */,
 				163F87971F9539C10032DF2C /* AppDelegate.swift */,
-				165EFF591FB9F8CB002880EF /* GoogleService-Info.plist */,
 				163F879E1F9539C10032DF2C /* Assets.xcassets */,
+				E628E3D02B9E9F6A0018117F /* GoogleService-Info.plist */,
 				163F87A31F9539C10032DF2C /* Info.plist */,
 			);
 			path = NelsonMandala_app;
@@ -485,10 +485,10 @@
 			files = (
 				6671C8F71FE2FBD20074CAC0 /* Gallery.storyboard in Resources */,
 				6662AED31FE42F89005EFE33 /* Localizable.strings in Resources */,
-				165EFF5A1FB9F8CB002880EF /* GoogleService-Info.plist in Resources */,
 				163F87A21F9539C10032DF2C /* LaunchScreen.storyboard in Resources */,
 				6671C8FC1FE2FBDC0074CAC0 /* GalleryMandalasFromATask.storyboard in Resources */,
 				163F879F1F9539C10032DF2C /* Assets.xcassets in Resources */,
+				E628E3D12B9E9F6A0018117F /* GoogleService-Info.plist in Resources */,
 				6671C9011FE2FBF60074CAC0 /* GalleryDetails.storyboard in Resources */,
 				6671C8F21FE2FBC60074CAC0 /* SectionTimePicker.storyboard in Resources */,
 				6671C8ED1FE2FBB30074CAC0 /* MandalaMaker.storyboard in Resources */,
@@ -530,23 +530,59 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NelsonMandala_app/Pods-NelsonMandala_app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAppCheckInterop/FirebaseAppCheckInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuthInterop/FirebaseAuthInterop.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreExtension/FirebaseCoreExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestore/FirebaseFirestore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseFirestoreInternal/FirebaseFirestoreInternal.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseSharedSwift/FirebaseSharedSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseStorage/FirebaseStorage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/HGCircularSlider/HGCircularSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/Haneke/Haneke.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/RecaptchaInterop/RecaptchaInterop.framework",
 				"${BUILT_PRODUCTS_DIR}/ScaledVisibleCellsCollectionView/ScaledVisibleCellsCollectionView.framework",
 				"${BUILT_PRODUCTS_DIR}/XMSegmentedControl/XMSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAppCheckInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuthInterop.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseFirestoreInternal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseSharedSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseStorage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HGCircularSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haneke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RecaptchaInterop.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScaledVisibleCellsCollectionView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -834,11 +870,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NelsonMandala_app/NelsonMandala_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F796PV2T27;
 				INFOPLIST_FILE = NelsonMandala_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nil.NelsonMandala-app";
+				PRODUCT_BUNDLE_IDENTIFIER = nil.lucas.NelsonMandala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -854,11 +890,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NelsonMandala_app/NelsonMandala_app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F796PV2T27;
 				INFOPLIST_FILE = NelsonMandala_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nil.NelsonMandala-app";
+				PRODUCT_BUNDLE_IDENTIFIER = nil.lucas.NelsonMandala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

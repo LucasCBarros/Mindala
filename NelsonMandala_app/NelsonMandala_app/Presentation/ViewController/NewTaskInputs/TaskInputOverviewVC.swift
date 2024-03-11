@@ -46,8 +46,8 @@ class TaskInputOverviewVC: UIViewController {
             daySelectView.selectedDays = myTask.progressDays!
             self.view.backgroundColor = myTask.colorAux
             
-            for l in labelsToPaint {
-                l.textColor = myTask.colorAux
+            for label in labelsToPaint {
+                label.textColor = myTask.colorAux
                 daySelectView.fillColor = myTask.colorAux!
                 daySelectView.updateSelectionVisual()
             }
@@ -63,13 +63,11 @@ class TaskInputOverviewVC: UIViewController {
                 workingHoursLabel.text = "\(reminders.count) \("workingHoursLabel".localized)"
             }
         }
-        
     }
 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 
     
@@ -78,5 +76,4 @@ class TaskInputOverviewVC: UIViewController {
             delegate.saveAndExit()
         }
     }
-
 }

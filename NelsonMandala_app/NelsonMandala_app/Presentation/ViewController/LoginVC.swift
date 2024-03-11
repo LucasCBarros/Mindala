@@ -66,7 +66,11 @@ class LoginVC: UIViewController {
 //                return
 //            } else{
                 OperationQueue.main.addOperation {
+//                    var vc = MandalaMakerViewController()
+//                    self.navigationController?.show(vc, sender: nil)
+                    
                     self.performSegue(withIdentifier: "mainSegue", sender: nil)
+//                    self.performSegue(withIdentifier: "startMandala", sender: nil)
                 }
 //            }
             
@@ -136,15 +140,15 @@ class LoginVC: UIViewController {
             destination.tasksTableView.reloadData()
             guard let id = Auth.auth().currentUser?.uid else {
                 destination.uid = "123"
+                destination.refUserTask = Database.database().reference().child("user-task").child(destination.uid!)
+                destination.fbObserveTasks()
                 return
             }
             destination.uid = Auth.auth().currentUser?.uid
             destination.refUserTask = Database.database().reference().child("user-task").child(destination.uid!)
             destination.fbObserveTasks()
-            
         }
     }
-
 }
 
 //MARK: Extension do Textfield
@@ -174,7 +178,6 @@ extension LoginVC: UITextFieldDelegate {
     func emailTxtFieldIsEmpty()->Bool{
         return emailTextField.text! == ""
     }
-    
 }
 
 //MARK: Extension do segmented Control
@@ -190,7 +193,6 @@ extension LoginVC: SegmentViewProtocol {
         }
         updateLayouts()
     }
-
 }
 
 //MARK: Extension do Firebase
@@ -227,11 +229,10 @@ extension LoginVC{
             }
             
             //DATABASE
-            guard let uid = User?.uid else{
+            guard let uid = User?.user.uid else{
                 print("uid nao criado")
                 return
             }
-            
             let ref = Database.database().reference().child("users").child(uid)
             ref.updateChildValues(["name":name,"email":email], withCompletionBlock: { (error, ref) in
                 if error != nil{
@@ -246,9 +247,7 @@ extension LoginVC{
                     return
                 }
             })
-            
             OperationQueue.main.addOperation {
-                
                 completion(nil)
             }
         }
@@ -260,7 +259,9 @@ extension LoginVC{
     /// - Parameters:
     ///   - email: User(String)
     ///   - pass: User(String)
-    func fbLogin(UserEmail email:String, UserPassword pass:String, completion: @escaping (UIAlertController?) -> Void){
+    func fbLogin(UserEmail email:String,
+                 UserPassword pass:String,
+                 completion: @escaping (UIAlertController?) -> Void){
         if passwordTxtFieldIsEmpty() || emailTxtFieldIsEmpty(){
             print("CAMPOS OBRIGATÓRIOS ESTÃO VAZIOS - LOGIN")
             return
@@ -270,7 +271,9 @@ extension LoginVC{
             if error != nil{
                 let errorString = self.translatesGivenError(error: String(describing:error))
                 
-                let errorNotification = UIAlertController(title: "Login Inválido", message: errorString, preferredStyle: .alert)
+                let errorNotification = UIAlertController(title: "Login Inválido",
+                                                          message: errorString,
+                                                          preferredStyle: .alert)
                 let errorAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                 errorNotification.addAction(errorAction)
                 
@@ -285,7 +288,6 @@ extension LoginVC{
                 completion(nil)
             }
         }
-        
     }
     
     func translatesGivenError(error err:String) -> String {

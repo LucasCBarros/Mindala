@@ -23,7 +23,6 @@ class SegmentView: UIView, XMSegmentedControlDelegate {
     let segmentedControl:XMSegmentedControl = {
         let segment = XMSegmentedControl(frame: CGRect(x: 0, y: 0, width: 200, height: 50), segmentTitle: ["Login",NSLocalizedString("RegisterLogin", comment: "")], selectedItemHighlightStyle: .BottomEdge)
         return segment
-        
     }()
     
     func xmSegmentedControl(xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
@@ -64,7 +63,5 @@ class SegmentView: UIView, XMSegmentedControlDelegate {
         segmentedControl.edgeHighlightHeight = 3
         segmentedControl.font = .niSegmentedFont
         segmentedControl.highlightColor = #colorLiteral(red: 0.8156862745, green: 0.01960784314, blue: 0.7176470588, alpha: 1)
-        
     }
-    
 }

@@ -16,6 +16,4 @@ class SubTaskCard: UICollectionViewCell {
     
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var dueDate: UILabel!
-    
-
 }

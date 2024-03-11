@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class MainController: UIViewController {
-
     
     @IBOutlet weak var Header: MainHeader!
     //@IBOutlet var subHeaderView: SubHeaderView!
@@ -37,8 +36,6 @@ class MainController: UIViewController {
     //Referencia do UserTask
     var refUserTask:DatabaseReference?
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,7 +47,7 @@ class MainController: UIViewController {
             refUserTask = Database.database().reference().child("user-task").child(uid!)
             fbObserveTasks()
 //            fbObserveTaskUpdate()
-        }else {
+        } else {
             fbLogout()
         }
         
@@ -70,8 +67,6 @@ class MainController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     /// Retorna o valor dizendo o status da sessão
     ///
     /// - Returns: True(Sim) / False(Nao)
@@ -83,7 +78,6 @@ class MainController: UIViewController {
     @IBAction func handleLogOut(_ sender: UIButton) {
         self.fbLogout()
     }
-    
     
     /// Funcao responsavel por trazer de volta para essa interface
     ///
@@ -120,10 +114,7 @@ class MainController: UIViewController {
             }
         }
     }
-    
-
 }
-
 
 extension MainController {
     /// Funcao que simplesmente realiza o Logout da Sessão
@@ -136,7 +127,6 @@ extension MainController {
             OperationQueue.main.addOperation {
                 self.present(loginVC, animated: true, completion: nil)
             }
-            
         } catch let error{
             print(error)
         }
@@ -173,12 +163,9 @@ extension MainController {
                     print("NÃO CONSEGUI PEGAR A TASK")
                 })
                 
-                
             }) { (error) in
                 print("NÃO CONSEGUI PEGAR A USER-TASK")
             }
-            
-            
         }
     }
     
@@ -199,12 +186,9 @@ extension MainController {
                                 self.prepareDisplayTasksArray()
                                 self.tasksTableView.reloadData()
                             }
-                            
                         }
                     }
                 }
-                
-                
             })
         }
     }
@@ -213,7 +197,6 @@ extension MainController {
     //Cuidado, não da pra voltar atrás depois de usar
     func fbDeleteTaskNode(taskKey: String) {
         if uid != nil {
-            
             let dbRef = Database.database().reference()
             let taskRef = dbRef.child("tasks").child(taskKey)
             taskRef.removeValue()
@@ -231,7 +214,6 @@ extension MainController {
 //        }
 //        prepareDisplayTasksArray()
 //    }
-    
 }
 
 

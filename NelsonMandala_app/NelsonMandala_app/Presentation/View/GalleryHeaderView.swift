@@ -9,7 +9,5 @@
 import UIKit
 
 class GalleryHeaderView: UICollectionReusableView {
-    
     @IBOutlet weak var titleLabel: UILabel!
-        
 }

@@ -10,7 +10,6 @@ import UIKit
 import Haneke
 
 class MandalaFromTaskDetail: UIViewController {
-
     
     @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var mandalaImg: UIImageView!
@@ -38,14 +37,10 @@ class MandalaFromTaskDetail: UIViewController {
         return .lightContent
     }
 
-    
     @IBAction func sharePress(_ sender: Any) {
         let actityVC = UIActivityViewController(activityItems: [self.mandalaImg.image], applicationActivities: nil)
         actityVC.popoverPresentationController?.sourceView = self.view
         
         self.present(actityVC, animated: true, completion: nil)
     }
-    
-    
-
 }

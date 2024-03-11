@@ -68,20 +68,16 @@ extension MainGalleryVC: UICollectionViewDelegate, UICollectionViewDataSource {
             
             if (activeTaskArray[indexPath.row].mandalaArray?.count == 0){
                 cell.createGalleryCell(taskName: activeTaskArray[indexPath.row].name!, taskDetails: (activeTaskArray[indexPath.row].mandalaArray?.count)!, icon: IconSelectionMechanism.imageFromInt(index: Int(truncating: activeTaskArray[indexPath.row].icon!)), preview: nil, bgColor: activeTaskArray[indexPath.row].colorAux!)
-            }
-            else{
+            } else {
                 cell.createGalleryCell(taskName: activeTaskArray[indexPath.row].name!, taskDetails: (activeTaskArray[indexPath.row].mandalaArray?.count)!, icon: IconSelectionMechanism.imageFromInt(index: Int(truncating: activeTaskArray[indexPath.row].icon!)), preview: URL.init(string: activeTaskArray[indexPath.row].mandalaArray![0].imageKey!), bgColor: activeTaskArray[indexPath.row].colorAux!)
             }
         } else if (indexPath.section == 1) {
             if (inactiveTaskArray[indexPath.row].mandalaArray?.count == 0){
                 cell.createGalleryCell(taskName: inactiveTaskArray[indexPath.row].name!, taskDetails: (inactiveTaskArray[indexPath.row].mandalaArray?.count)!, icon:  IconSelectionMechanism.imageFromInt(index: Int(truncating: inactiveTaskArray[indexPath.row].icon!)), preview: nil, bgColor: inactiveTaskArray[indexPath.row].colorAux!)
-            }
-            else{
+            } else {
                 cell.createGalleryCell(taskName: inactiveTaskArray[indexPath.row].name!, taskDetails: (inactiveTaskArray[indexPath.row].mandalaArray?.count)!, icon:  IconSelectionMechanism.imageFromInt(index: Int(truncating: inactiveTaskArray[indexPath.row].icon!)), preview: URL.init(string: inactiveTaskArray[indexPath.row].mandalaArray![0].imageKey!), bgColor: inactiveTaskArray[indexPath.row].colorAux!)
             }
-
         }
-        
         return cell
     }
     

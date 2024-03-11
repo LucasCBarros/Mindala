@@ -38,28 +38,22 @@ class DatesHelperMechanism{
         if(hour == 0) {
             if(minutes > 1) {
                 return "\(minutes) \("DateHelperMechanisms".localized)"
-            }
-            else{
+            } else {
                 return"\(minutes) \("DateHelperMechanism".localized)"
             }
-        }
-        else if(hour == 1) {
+        } else if(hour == 1) {
             if(minutes != 0) {
                 return "1 \("DateHelperMechanismsHora".localized) \(minutes) \("DateHelperMechanisms".localized)"
-            }
-            else{
+            } else {
                 return "1 \("DateHelperMechanismsHoraApenas".localized)"
             }
-        }
-        else{
+        } else {
             if(minutes != 0){
                 return "\(hour) \("DateHelperMechanismsHoras".localized) \("DateHelperMechanisms".localized)"
-            }
-            else {
+            } else {
                 return "\(hour) \("DateHelperMechanismsHorasApenas".localized)"
             }
         }
-        
     }
     
     class func monthNameFromNumber(number: Int) -> String {
@@ -74,7 +68,6 @@ class DatesHelperMechanism{
         let myDateFormatter = DateFormatter()
         myDateFormatter.locale = Locale.current
         return(myDateFormatter.weekdaySymbols[number - 1])
-
     }
     
     class func weekDayFirstLetterFromNumber(number: Int) -> String {
@@ -82,7 +75,5 @@ class DatesHelperMechanism{
         let myDateFormatter = DateFormatter()
         myDateFormatter.locale = Locale.current
         return(myDateFormatter.veryShortWeekdaySymbols[number - 1])
-        
     }
-    
 }

@@ -13,8 +13,6 @@ extension MainController: WeekCalendarHeaderProtocol{
         let doubleTimestamp = Double(timestamp)
         //buscar em um business todos as subs no dia dessa timestamp
         
-        
-        
         //self.view.addSubview(subHeaderView)
         //openSubHeader()
         //addConstraintsToSubHeader()
@@ -23,8 +21,6 @@ extension MainController: WeekCalendarHeaderProtocol{
 //        subHeaderView.subTaskList = subTaskArray
 //        subHeaderView.currentIndex = 0
 //        subHeaderView.UpdateInfo()
-        
-        
     }
 }
 
@@ -37,9 +33,7 @@ extension MainController: WeekCalendarHeaderProtocol{
 //            self.subHeaderView.removeFromSuperview()
 //            self.view.layoutIfNeeded()
 //            self.subHeaderView.alpha = 0
-//
 //        }
-//
 //    }
 //
 //    //Abre a view com as tasks do dia

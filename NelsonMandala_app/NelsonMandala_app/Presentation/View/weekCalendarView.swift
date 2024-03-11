@@ -12,7 +12,6 @@ protocol WeekCalendarHeaderProtocol {
     func touchOnDay(timestamp: String)
 }
 
-
 @IBDesignable
 class weekCalendarView: UIView {
 
@@ -83,7 +82,6 @@ class weekCalendarView: UIView {
             
             newView.addGestureRecognizer(tapGesture)
         }
-        
     }
     
     //AÇAO PARA QUANDO TOCA EM UM DOS DIAS DO CALENDARIO
@@ -91,9 +89,6 @@ class weekCalendarView: UIView {
         if let delegate = self.delegate {
             delegate.touchOnDay(timestamp: day.name!)
         }
-        
         //update visual
     }
-    
 }
-

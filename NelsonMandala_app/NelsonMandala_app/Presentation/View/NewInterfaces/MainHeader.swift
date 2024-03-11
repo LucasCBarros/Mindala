@@ -22,7 +22,7 @@ class MainHeader: UIView {
         self.gradientLayer = CAGradientLayer()
         
         self.gradientLayer.frame = self.bounds
-        self.gradientLayer.colors = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0).cgColor,#colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1).cgColor]
+        self.gradientLayer.colors = [UIColor.white.cgColor,#colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1).cgColor]
         
         layer.addSublayer(self.gradientLayer)
     }

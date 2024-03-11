@@ -63,8 +63,7 @@ class DaySelectView: UIView {
         let formatedDay = DayOfWeekEnum(rawValue: n)!
         if(selectedDays.contains(formatedDay)){
             selectedDays.remove(at: (selectedDays.index(of: formatedDay)!))
-        }
-        else {
+        } else {
             selectedDays.append(formatedDay)
         }
         updateSelectionVisual()
@@ -85,8 +84,7 @@ class DaySelectView: UIView {
                         lbl.textColor = fillTextColor
                     }
                 }
-            }
-            else {
+            } else {
                 b.0.backgroundColor = emptyColor
                 
                 for sub in b.0.subviews {
@@ -97,8 +95,4 @@ class DaySelectView: UIView {
             }
         }
     }
-    
-    
 }
-
-

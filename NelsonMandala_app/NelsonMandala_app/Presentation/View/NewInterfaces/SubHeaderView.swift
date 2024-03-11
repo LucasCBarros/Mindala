@@ -9,7 +9,6 @@
 import UIKit
 
 protocol subHeaderProtocol{
-    
     func closeSubHeader()
 }
 

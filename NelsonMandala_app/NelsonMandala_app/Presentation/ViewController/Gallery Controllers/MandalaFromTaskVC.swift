@@ -27,13 +27,10 @@ class MandalaFromTaskVC: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-        
         navigationTitle.title = selectedTask?.name
     }
     
-    override func didReceiveMemoryWarning() {
-        
-    }
+    override func didReceiveMemoryWarning() { }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -44,7 +41,7 @@ class MandalaFromTaskVC: UIViewController {
     }
     
     @IBAction func infoPressed() {
-        
+        // TODO:
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,7 +52,6 @@ class MandalaFromTaskVC: UIViewController {
                     vc.mandalaUrl = mandala.imageKey
                     vc.mandalaTitle = DatesHelperMechanism.GetStringDateFromTimestamp(timestamp: (mandala.completionDate?.doubleValue)!)
                 }
-                
             }
         }
     }
@@ -67,16 +63,12 @@ extension MandalaFromTaskVC: UICollectionViewDataSource {
         
         if let tasks = selectedTask {
             print(tasks.mandalaArray?.count)
-            if let mandalas = tasks.mandalaArray
-            {
+            if let mandalas = tasks.mandalaArray {
                 return mandalas.count
-            }
-            else {
+            } else {
                 return 0
             }
-        }
-        else
-        {
+        } else {
             return 0
         }
     }

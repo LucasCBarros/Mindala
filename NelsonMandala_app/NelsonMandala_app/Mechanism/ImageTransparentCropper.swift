@@ -11,7 +11,6 @@ import UIKit
 
 class ImageTransparentCropper {
     
-    
     func CropImage(imageToCrop: UIImage) -> UIImage {
         
         let pixelInfoArray = self.pixelArrayFromImage(image: imageToCrop)
@@ -66,7 +65,6 @@ class ImageTransparentCropper {
                 dataMatrix[x].append(color)
             }
         }
-        
         return dataMatrix
     }
     
@@ -86,7 +84,6 @@ class ImageTransparentCropper {
         if(r != 0 || g != 0 || b != 0 || a != 0) {
             print("R \(r) - G \(g) - B \(b) - A \(a)")
         }
-        
         
         return PixelData(a: a, r: r, g: g, b: b)
     }
@@ -112,7 +109,6 @@ class ImageTransparentCropper {
     
     fileprivate func imageFromBitmap(pixels: [PixelData], width: Int, height: Int) -> UIImage? {
         assert(width > 0)
-        
         assert(height > 0)
         
         let pixelDataSize = MemoryLayout<PixelData>.size
@@ -150,10 +146,4 @@ class ImageTransparentCropper {
         print("tamanho da imagem final: \(width) / \(height)")
         return UIImage(cgImage: cgimage)
     }
-    
-    
-    
-    
-    
 }
-
